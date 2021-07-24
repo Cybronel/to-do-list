@@ -117,6 +117,7 @@ button {
 }
 
 ul {
+    padding: 0;
     display: flex;
     flex-flow: column nowrap;
     list-style: none;
@@ -124,7 +125,6 @@ ul {
 }
 
 .task {
-    height: 4.5rem;
     width: 65%;
     background-color: var(--white);
     font-size: 3.5rem;
@@ -152,7 +152,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 3px black;
+    border: solid 3px var(--black);
     border-radius: 7rem;
     width: 7rem;
     height: 7rem;
@@ -173,4 +173,121 @@ li {
 
 .complete-task {
     background-color: var(--green);
+}
+
+@media (max-width: 1400px) {
+    .remove-task,
+    .complete-task {
+        width: 5rem;
+        height: 5rem;
+    }
+    .icon {
+        width: 2rem;
+    }
+    .icon2 {
+        width: 2.5rem;
+    }
+    .task {
+        width: 60%;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .first-section {
+        flex-flow: column;
+    }
+    .info {
+        font-size: 2.5rem;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+    form {
+        width: 100%;
+    }
+    .remove-task,
+    .complete-task {
+        border: solid 2px var(--black);
+        width: 4rem;
+        height: 4rem;
+    }
+    .task {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .task {
+        width: 50%;
+        font-size: 2rem;
+    }
+    .task-actions {
+        width: 30%;
+    }
+}
+
+@media (max-width: 620px) {
+    .title {
+        font-size: 8rem;
+    }
+    .task {
+        width: 40%;
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    .remove-task,
+    .complete-task {
+        border: solid 2px var(--black);
+        width: 3rem;
+        height: 3rem;
+    }
+    .icon {
+        width: 1rem;
+    }
+    .icon2 {
+        width: 1.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .title {
+        font-size: 6rem;
+    }
+    .info {
+        font-size: 2rem;
+    }
+    .task {
+        width: 40%;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 375px) {
+    main {
+        width: 90%;
+    }
+    .info {
+        width: 70%;
+    }
+    .input-info {
+        font-size: 1.5rem;
+    }
+    h2 {
+        margin: 2rem 0 1.5rem 0;
+    }
+    .task {
+        width: 85%;
+    }
+    .task-actions {
+        margin-top: 1.5rem;
+        width: 40%;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    li {
+        flex-flow: column nowrap;
+    }
 }
