@@ -2,8 +2,17 @@
 var addButton = document.querySelector('button')
 var inputField = document.querySelector('input')
 var list = document.querySelector('ul')
+var tooltip = document.querySelector('.input-info')
 
 addButton.addEventListener('click', function() {
+
+    if (inputField.value === "") {
+        tooltip.textContent = 'you need to type something :/'
+        tooltip.style.opacity = '1'
+        tooltip.style.fontStyle = 'normal'
+    } else {
+    tooltip.textContent = 'type your task here:'
+    tooltip.style.opacity = '0.5'
 
     var taskContainer = document.createElement('li')
     taskContainer.className = 'task-container'
@@ -30,6 +39,7 @@ addButton.addEventListener('click', function() {
     removeBtn.appendChild(removeImg)
     doneBtn.appendChild(doneImg)
     inputField.value = ""
+    }
 
     var removeButtons = document.querySelectorAll(".remove-task")
     var completeButtons = document.querySelectorAll('.complete-task')
