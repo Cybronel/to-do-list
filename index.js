@@ -46,7 +46,6 @@ addButton.addEventListener('click', function() {
         completeButtons[j].addEventListener('click', function() {
             tasktext[j].style.transition = 'background-color 500ms linear';
             tasktext[j].style['background-color'] = 'var(--green)';
-            tasktext[j].style.color = 'var(--white)';
             completeButtons[j].style.display = 'none';
         })
     }
