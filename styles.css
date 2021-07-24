@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+
+:root {
+    font-size: 12px;
+    font-family: 'Lexend', sans-serif;
+    --bg-color: #DF2935;
+    --black: #080708;
+    --white: #C1DBE3;
+    --yellow: #FDCA40;
+    --pink: #EDADC7;
+    --red: #FF0000;
+    --green: #5FFF51;
+    --dark-red: #8F141C;
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+p {
+    margin: 0;
+}
+
+.title {
+    margin: 2rem auto 0 auto;
+    font-size: 10rem;
+    font-weight: 500;
+    color: var(--white);
+    text-shadow: 0px 0.4rem 0px var(--black);
+}
+
+a {
+    font-size: 1.7rem;
+    color: var(--white);
+    margin: -1rem auto 0 auto;
+    text-decoration: none;
+    text-shadow: 0px 0.1rem 0px var(--black);
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+
+    margin: 0 auto;
+    width: 70%;
+}
+
+.first-section {
+    margin-top: 3rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-section {
+    margin-bottom: 10rem;
+}
+
+h2 {
+    letter-spacing: 1rem;
+    color: var(--black);
+    opacity: 0.5;
+    margin: 3rem 0 2.5rem 0;
+    font-size: 5rem;
+    align-self: center;
+}
+
+.info {
+    width: 50%;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 4rem 3rem 4rem 3rem;
+    background-color: var(--yellow);
+    filter: drop-shadow(-10.0536px 10.0536px 0px #000000);
+}
+
+form {
+    height: 15rem;
+    width: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.input-info {
+    font-weight: 600;
+    font-size: 2rem;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+input {
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 3rem;
+    height: 3rem;
+    width: 70%;
+    filter: drop-shadow(0px 0.3rem 0px #000000);
+}
+
+button {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    border: none;
+    background-color: var(--pink);
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    filter: drop-shadow(0px 0.3rem 0px #000000);
+}
+
+ul {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style: none;
+    gap: 3rem  
+}
+
+.task {
+    height: 4.5rem;
+    width: 65%;
+    background-color: var(--white);
+    font-size: 3.5rem;
+    border-radius: 2rem;
+    padding: 1.3rem 5rem;
+    box-shadow: 0px 7.89922px 0px #000000;
+}
+
+li {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-actions {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 20%;
+    justify-content: space-evenly;
+}
+
+.remove-task,
+.complete-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px black;
+    border-radius: 7rem;
+    width: 7rem;
+    height: 7rem;
+}
+
+.icon {
+    width: 3rem;
+}
+
+.icon2 {
+    width: 4rem;
+}
+
+
+.remove-task {
+    background-color: var(--red);
+}
+
+.complete-task {
+    background-color: var(--green);
+}

@@ -12,20 +12,37 @@
     <a href="https://www.instagram.com/sebastianteaca/" class="name">Teaca Sebastian</a>
     <main>
         <section class="first-section">
-            <div class="info-container">
                 <p class="info">Enter your desired task in the field and click the button to add it on the list below</p>
-            </div>
-            <form class="input container" id="form1">
+            <form class="input-container" id="form1">
+                <p class="input-info">type your task here:</p>
                 <input type="text">
-                <button type="submit" form="form1"></button>
+                <button type="submit" form="form1">ADD</button>
             </form>
         </section>
+        <h2>- LIST -</h2>
         <section class="second-section">
             <ul class="task-list">
                 <li class="task-container">
                     <p class="task">Take out the trash</p>
-                    <div class="remove-task"></div>
-                    <div class="complete-task"></div>
+                    <div class="task-actions">
+                        <div class="remove-task">
+                            <img src="icons/close.svg" alt="N" class="icon">
+                        </div>
+                        <div class="complete-task">
+                            <img src="icons/done.svg" alt="Y" class="icon icon2">
+                        </div>
+                    </div>
+                </li>
+                <li class="task-container">
+                    <p class="task">Kill your wife</p>
+                    <div class="task-actions">
+                        <div class="remove-task">
+                            <img src="icons/close.svg" alt="N" class="icon">
+                        </div>
+                        <div class="complete-task">
+                            <img src="icons/done.svg" alt="Y" class="icon icon2">
+                        </div>
+                    </div>
                 </li>
             </ul>
         </section>
