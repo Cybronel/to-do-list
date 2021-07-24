@@ -188,7 +188,7 @@ li {
         width: 2.5rem;
     }
     .task {
-        width: 60%;
+        width: 65%;
         padding: 1rem 2rem;
     }
 }
@@ -218,7 +218,7 @@ li {
 
 @media (max-width: 800px) {
     .task {
-        width: 50%;
+        width: 60%;
         font-size: 2rem;
     }
     .task-actions {
@@ -231,7 +231,7 @@ li {
         font-size: 8rem;
     }
     .task {
-        width: 40%;
+        width: 55%;
         font-size: 1.5rem;
     }
     h2 {
@@ -259,7 +259,6 @@ li {
         font-size: 2rem;
     }
     .task {
-        width: 40%;
         font-size: 1.3rem;
     }
 }
