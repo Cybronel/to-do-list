@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js" async></script>
 </head>
 <body>
     <h1 class="title">To do list</h1>
@@ -16,7 +17,7 @@
             <form class="input-container" id="form1">
                 <p class="input-info">type your task here:</p>
                 <input type="text">
-                <button type="submit" form="form1">ADD</button>
+                <button type="button" form="form1">ADD</button>
             </form>
         </section>
         <h2>- LIST -</h2>
@@ -35,6 +36,28 @@
                 </li>
                 <li class="task-container">
                     <p class="task">Kill your wife</p>
+                    <div class="task-actions">
+                        <div class="remove-task">
+                            <img src="icons/close.svg" alt="N" class="icon">
+                        </div>
+                        <div class="complete-task">
+                            <img src="icons/done.svg" alt="Y" class="icon icon2">
+                        </div>
+                    </div>
+                </li>
+                <li class="task-container">
+                    <p class="task">Go shopping</p>
+                    <div class="task-actions">
+                        <div class="remove-task">
+                            <img src="icons/close.svg" alt="N" class="icon">
+                        </div>
+                        <div class="complete-task">
+                            <img src="icons/done.svg" alt="Y" class="icon icon2">
+                        </div>
+                    </div>
+                </li>
+                <li class="task-container">
+                    <p class="task">Clean the house</p>
                     <div class="task-actions">
                         <div class="remove-task">
                             <img src="icons/close.svg" alt="N" class="icon">
